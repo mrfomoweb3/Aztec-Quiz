@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aztec Privacy Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background + Logo -->
+  <div class="background-overlay">
+    <img src="assets/logo.png" class="aztec-logo" alt="Aztec Logo" />
+  </div>
+
+  <div class="quiz-wrapper fade-in">
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="quiz-box">
+      <h1>🛡️ Aztec Privacy Quiz</h1>
+      <p>Test your ZK knowledge. Can you master the shadows?</p>
+      <button id="start-btn">Begin</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="quiz-box hidden">
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+      <div id="question-box"></div>
+      <ul id="answer-buttons"></ul>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+<div id="result-screen" class="quiz-box hidden">
+    <h2>Your Score: <span id="final-score"></span>%</h2>
+    <p id="result-message"></p>
+    <img id="result-image" class="certificate" src="" alt="Certificate" />
+  
+    <div class="certificate-actions">
+      <button id="download-btn">Download Certificate</button>
+      <a id="twitter-share" target="_blank">Share on Twitter</a>
+    </div>
+  
+    <div class="result-actions">
+      <button id="retry-btn">Try Again</button>
+    </div>
+  </div>
+  
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
